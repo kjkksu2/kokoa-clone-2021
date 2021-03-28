@@ -1,0 +1,23 @@
+.background-image {
+  z-index: 1;
+}
+
+/* background-image클래스의 마지막 자식이 after, 첫 번째 자식은 before  
+    각각 또다른 태그를 만든다고 생각하면 됨. */
+.background-image::after {
+  content: "";
+  background-image: url("https://i.pinimg.com/originals/25/07/6d/25076d2e051cd04740674adbbf33165c.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150vh;
+  opacity: 0.9;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}

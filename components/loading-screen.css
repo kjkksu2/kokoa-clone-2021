@@ -1,0 +1,60 @@
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+
+  font-size: 100px;
+}
+.loading-screen span:first-child {
+  margin-bottom: 30px;
+  background-color: #d9f7f6;
+  color: #040212;
+}
+.loading-screen div {
+  width: 290px;
+  height: 5px;
+  background-color: red;
+}
+.loading-screen span div:first-child {
+  position: relative;
+  bottom: -10px;
+}
+@keyframes appearSlowly {
+  from {
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-screen span {
+  opacity: 0;
+  animation: appearSlowly 3s ease-in-out forwards;
+}
+.loading-screen span:first-child {
+  animation-delay: 0.2s;
+}
+.loading-screen span:last-child {
+  animation-delay: 1.2s;
+}
+
+@keyframes hideScreen {
+  from {
+  }
+  to {
+    visibility: hidden;
+  }
+}
+.loading-screen {
+  animation: hideScreen 0.3s ease-in-out forwards;
+  animation-delay: 4s;
+}

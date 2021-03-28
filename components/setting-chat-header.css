@@ -1,0 +1,28 @@
+.settings-chat-header {
+  display: flex;
+  align-items: center;
+  padding: 20px var(--standard-space);
+  padding-top: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  background-color: black;
+  z-index: 1;
+}
+.settings-chat-header a,
+.settings-chat-header span,
+.settings-chat-header div {
+  width: 33%;
+}
+.settings-chat-header span {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.settings-chat-header div {
+  text-align: end;
+}
+.settings-chat-header__icons i {
+  margin-left: 15px;
+}

@@ -1,0 +1,102 @@
+.recommended-friends {
+  border-top: 1px solid var(--border-color-opacity);
+  border-bottom: 1px solid var(--border-color-opacity);
+  padding-top: 20px;
+}
+.recommended-friends__title {
+  color: rgba(255, 255, 255, 0.7);
+}
+.recommended-friends__text {
+  text-align: center;
+  padding: 110px 0px 130px 0px;
+  font-size: 18px;
+  color: var(--text-color-opacity);
+}
+
+.open-chat {
+  margin-top: 20px;
+}
+.open-chat__text {
+  display: flex;
+  justify-content: space-between;
+}
+.open-chat__title {
+  color: rgba(255, 255, 255, 0.7);
+}
+.open-chat__content {
+  color: var(--text-color-opacity);
+}
+
+@keyframes appearFromBottom {
+  from {
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.open-chat__list {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+
+  animation: appearFromBottom 0.5s ease-in-out forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.open-chat__list:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.open-chat__list:last-child {
+  animation-delay: 0.7s;
+}
+.open-chat__list:hover {
+  box-shadow: 10px 5px 10px 8px var(--text-color-opacity);
+  padding: 15px;
+}
+
+.open-chat__contents__column:first-child {
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+}
+.open-chat__contents__column span:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+.open-chat__contents__column span:nth-child(2) {
+  color: var(--text-color-opacity);
+}
+.open-chat__contents__column span:last-child {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+.open-chat__contents__column span:last-child img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.open-chat__contents__column span:last-child h6 {
+  margin-left: 10px;
+}
+.open-chat__contents__column span:last-child div {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0px 10px;
+}
+.open-chat__contents__column span:last-child span {
+  color: red;
+}
+
+.open-chat__contents__column:last-child img {
+  width: 120px;
+  height: 120px;
+  border-radius: 30px;
+}

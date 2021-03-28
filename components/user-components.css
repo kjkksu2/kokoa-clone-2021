@@ -1,0 +1,99 @@
+.user-components {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+.user-components:hover {
+  box-shadow: 10px 5px 10px 8px var(--text-color-opacity);
+  padding: 15px;
+}
+.image-size-standard {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.image-size-large {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+}
+.image-size-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+.image-size-xs {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+}
+.user-components__column {
+  display: flex;
+  align-items: center;
+}
+.user-components__text {
+  margin-left: 10px;
+  line-height: 140%;
+}
+.user-components__name,
+.user-components__message {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
+  text-overflow: ellipsis;
+}
+.user-components__name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.user-components__message {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color-opacity);
+}
+
+.user-components__song {
+  border: 2px solid greenyellow;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.user-components__song span {
+  color: white;
+}
+.user-components__song i {
+  color: greenyellow;
+}
+.user-components__column:last-child {
+  color: var(--text-color-opacity);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.user-components__column:last-child i {
+  margin-left: 10px;
+}
+.user-components__people-image {
+  width: 60px;
+}
+.user-components__content {
+  display: flex;
+}
+.user-components__content__etc {
+  font-weight: 600;
+  color: var(--text-color-opacity);
+  position: relative;
+}
+.user-components__content__etc i {
+  font-size: 12px;
+}
+.user-components__time {
+  line-height: 200%;
+}

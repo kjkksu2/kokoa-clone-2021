@@ -1,0 +1,55 @@
+.Welcome-header {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Welcome-header h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.Welcome-header h4 {
+  font-size: 15px;
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 70px;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+#login input {
+  border: none;
+  margin-bottom: 30px;
+}
+#login input:not([type="submit"]) {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 0px;
+  padding-left: 5px;
+}
+#login input[type="text"] {
+  margin-bottom: 5px;
+}
+#login input::placeholder {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#login input[type="submit"] {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(242, 220, 59);
+  color: rgba(0, 0, 0, 0.8);
+}
+#login a {
+  text-align: center;
+  font-weight: 600;
+}

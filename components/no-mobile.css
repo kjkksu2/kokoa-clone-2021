@@ -1,0 +1,26 @@
+#no-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 99;
+  font-size: 40px;
+}
+#no-mobile span {
+  display: block;
+  text-align: center;
+  width: 60%;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 550px) and (min-width: 537px) {
+  #no-mobile {
+    display: none;
+  }
+}

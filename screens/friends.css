@@ -1,0 +1,10 @@
+.channel {
+  border-top: 1px solid var(--border-color-opacity);
+  border-bottom: 1px solid var(--border-color-opacity);
+}
+.title {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color-opacity);
+}
